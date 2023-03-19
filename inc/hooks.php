@@ -29,8 +29,11 @@ class MDB_DB extends wpdb {
 		$this->total_query_time += $this->timer_stop();
 		return $result;
 	}
-	public function getOriginal() {
-		return $this->parentObj;
+	public function query_no_count( $query ) {
+		return parent::query( $query );
+	}
+	public function get_var_no_count( $query ) {
+		return parent::get_var( $query );
 	}
 }
 
