@@ -26,8 +26,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#version" target="_blank" title="<?php _e( wp_kses( 'Server version number. It may also include a suffix with configuration or build information. -debug indicates debugging support was enabled on the server, and -log indicates at least one of the binary log, general log or slow query log are enabled, for example 10.0.1-MariaDB-mariadb1precise-log. From MariaDB 10.2.1, this variable can be set at startup in order to fake the server version.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Server version number */
 				_e( 'MariaDB version', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['version']; if( isset( $mdbhc_gd['version_comment'] ) ) { echo $mdbhc_gd['version_comment'];  } ?></td>
@@ -38,8 +38,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#version_compile_os" target="_blank" title="<?php _e( wp_kses( 'Operating system that MariaDB was built on, for example debian-linux-gnu. ', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Operating system that MariaDB was built on */
 				_e( 'OS', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['version_compile_os']; ?></td>
@@ -50,8 +50,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#version_compile_machine" target="_blank" title="<?php _e( wp_kses( 'The machine type or architecture MariaDB was built on, for example i686.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: The machine type or architecture MariaDB was built on */
 				_e( 'Compilation Machine', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['version_compile_machine']; ?></td>
@@ -62,8 +62,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#version_source_revision" target="_blank" title="<?php _e( wp_kses( 'Source control revision id for MariaDB source code, enabling one to see exactly which version of the source was used for a build.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Source control revision id for MariaDB source code */
 				_e( 'Source version', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['version_source_revision']; ?></td>
@@ -74,8 +74,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#version_malloc_library" target="_blank" title="<?php _e( wp_kses( 'Version of the used malloc library.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Version of the used malloc library. */
 				_e( 'malloc version', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['version_malloc_library']; ?></td>
@@ -86,8 +86,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/ssltls-system-variables/#version_ssl_library" target="_blank" title="<?php _e( wp_kses( 'The version of the TLS library that is being used. Note that the version returned by this system variable does not always necessarily correspond to the exact version of the OpenSSL package installed on the system. OpenSSL shared libraries tend to contain interfaces for multiple versions at once to allow for backward compatibility. Therefore, if the OpenSSL package installed on the system is newer than the OpenSSL version that the MariaDB server binary was built with, then the MariaDB server binary might use one of the interfaces for an older version.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: The version of the TLS library that is being used. */
 				_e( 'SSL version', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['version_ssl_library']; ?></td>
@@ -98,8 +98,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#bind_address" target="_blank" title="<?php _e( wp_kses( 'By default, the MariaDB server listens for TCP/IP connections on all addresses. You can specify an alternative when the server starts using this option; either a host name, an IPv4 or an IPv6 address, '::' or '*' (all addresses). In some systems, such as Debian and Ubuntu, the bind_address is set to 127.0.0.1, which binds the server to listen on localhost only. bind_address has always been available as a mysqld option; from MariaDB 10.3.3 its also available as a system variable. Before MariaDB 10.6.0 '::' implied listening additionally on IPv4 addresses like '*'. From 10.6.0 onwards it refers to IPv6 stictly.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: By default, the MariaDB server listens for TCP/IP connections on all addresses. */
 				_e( 'Bind Address', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['bind_address']; ?></td>
@@ -110,8 +110,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#port" target="_blank" title="<?php _e( wp_kses( 'Port to listen for TCP/IP connections. If set to 0, will default to, in order of preference, my.cnf, the MYSQL_TCP_PORT environment variable, /etc/services, built-in default (3306).', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Port to listen for TCP/IP connections. */
 				_e( 'Port', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['port']; ?></td>
@@ -122,8 +122,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#hostname" target="_blank" title="<?php _e( wp_kses( 'When the server starts, this variable is set to the server host name.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: When the server starts, this variable is set to the server host name. */
 				_e( 'Hostname', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['hostname']; ?></td>
@@ -134,8 +134,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/replication-and-binary-log-system-variables/#server_id" target="_blank" title="<?php _e( wp_kses( 'This system variable is used with MariaDB replication to identify unique primary and replica servers in a topology. This system variable is also used with the binary log to determine which server a specific transaction originated on.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: This system variable is used with MariaDB replication to identify unique primary and replica servers in a topology. */
 				_e( 'Server ID', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['server_id']; ?></td>
@@ -146,8 +146,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#protocol_version" target="_blank" title="<?php _e( wp_kses( 'The version of the client/server protocol used by the MariaDB server.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: The version of the client/server protocol used by the MariaDB server. */
 				_e( 'Protocol version', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['protocol_version']; ?></td>
@@ -158,8 +158,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/ssltls-system-variables/#tls_version" target="_blank" title="<?php _e( wp_kses( 'This system variable accepts a comma-separated list (with no whitespaces) of TLS protocol versions. A TLS protocol version will only be enabled if it is present in this list. All other TLS protocol versions will not be permitted.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: This system variable accepts a comma-separated list (with no whitespaces) of TLS protocol versions. */
 				_e( 'TLS version', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['tls_version']; ?></td>
@@ -170,8 +170,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#sql_mode" target="_blank" title="<?php _e( wp_kses( 'Sets the SQL Mode. Multiple modes can be set, separated by a comma. ', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Sets the SQL Mode. */
 				_e( 'SQL Mode', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['sql_mode']; ?></td>
@@ -182,8 +182,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#storage_engine" target="_blank" title="<?php _e( wp_kses( 'The default storage engine. The default storage engine must be enabled at server startup or the server won\'t start.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: The default storage engine. */
 				_e( 'Storage Engine', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['storage_engine']; ?></td>
@@ -194,8 +194,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="require_secure_transport" target="_blank" title="<?php _e( wp_kses( 'When this option is enabled, connections attempted using insecure transport will be rejected. Secure transports are SSL/TLS, Unix sockets or named pipes. Note that per-account requirements take precedence.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Secure transports are SSL/TLS, Unix sockets or named pipes. */
 				_e( 'Require secure transport', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['require_secure_transport']; ?></td>
@@ -206,8 +206,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#read_only" target="_blank" title="<?php _e( wp_kses( 'When set to 1 (0 is default), no updates are permitted except from users with the SUPER privilege or, from MariaDB 10.5.2, the READ ONLY ADMIN privilege, or replica servers updating from a primary. The read_only variable is useful for replica servers to ensure no updates are accidentally made outside of what are performed on the primary.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: The read_only variable is useful for replica servers to ensure no updates are accidentally made outside of what are performed on the primary. */
 				_e( 'Read only', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['read_only']; ?></td>
@@ -218,8 +218,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: *** Please, some context here *** */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#connect_timeout" target="_blank" title="<?php _e( wp_kses( 'Time in seconds that the server waits for a connect packet before returning a \'Bad handshake\'. Increasing may help if clients regularly encounter \'Lost connection to MySQL server at \'X\', system error: error_number\' type-errors.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Time in seconds that the server waits for a connect packet before returning a Bad handshake. */
 				_e( 'Connection timeout', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['connect_timeout']; ?></td>
@@ -231,8 +231,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: *** Please, some context here *** */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#wait_timeout" target="_blank" title="<?php _e( wp_kses( 'Time in seconds that the server waits for a connection to become active before closing it. The session value is initialized when a thread starts up from either the global value, if the connection is non-interactive, or from the interactive_timeout value, if the connection is interactive.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Time in seconds that the server waits for a connection to become active before closing it. */
 				_e( 'Waiting timeout', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['wait_timeout']; ?></td>
@@ -243,8 +243,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: *** Please, some context here *** */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#warning_count" target="_blank" title="<?php _e( wp_kses( 'Read-only variable indicating the number of warnings, errors and notes resulting from the most recent statement that generated messages. See SHOW WARNINGS for more. Note warnings will only be recorded if sql_notes is true (the default).', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Read-only variable indicating the number of warnings, errors and notes resulting from the most recent statement that generated messages. */
 				_e( 'Waiting count', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['warning_count']; ?></td>
@@ -255,8 +255,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: IP address for the database */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#license" target="_blank" title="<?php _e( wp_kses( 'Server license, for example GPL.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Server license */
 				_e( 'License', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['license']; ?></td>
@@ -267,8 +267,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: *** Please, some context here *** */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#autocommit" target="_blank" title="<?php _e( wp_kses( 'If set to 1, the default, all queries are committed immediately. The LOCK IN SHARE MODE and FOR UPDATE clauses therefore have no effect. If set to 0, they are only committed upon a COMMIT statement, or rolled back with a ROLLBACK statement. If autocommit is set to 0, and then changed to 1, all open transactions are immediately committed.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: If set to 1, the default, all queries are committed immediately. */
 				_e( 'Auto Commit', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['autocommit']; ?></td>
@@ -279,8 +279,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: *** Please, some context here *** */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#concurrent_insert" target="_blank" title="<?php _e( wp_kses( 'If set to AUTO or 1, the default, MariaDB allows concurrent INSERTs and SELECTs for MyISAM tables with no free blocks in the data (deleted rows in the middle). If set to NEVER or 0, concurrent inserts are disabled. If set to ALWAYS or 2, concurrent inserts are permitted for all MyISAM tables, even those with holes, in which case new rows are added at the end of a table if the table is being used by another thread.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: MariaDB allows concurrent INSERTs and SELECTs for MyISAM tables with no free blocks in the data (deleted rows in the middle). */
 				_e( 'Concurrent Insert', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['concurrent_insert']; ?></td>
@@ -291,8 +291,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: *** Please, some context here *** */
+			<td><a href="https://mariadb.com/kb/en/server-system-variables/#error_count" target="_blank" title="<?php _e( wp_kses( 'Read-only variable denoting the number of errors from the most recent statement in the current session that generated errors.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Read-only variable denoting the number of errors from the most recent statement in the current session that generated errors. */
 				_e( 'Error count', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['error_count']; ?></td>
@@ -303,8 +303,8 @@ if ('general' === $active_stab) {
 		$mdbhc_gd_general = false;
 	?>
 		<tr>
-			<td><?php
-				/* translators: *** Please, some context here *** */
+			<td><a href="https://mariadb.com/kb/en/replication-and-binary-log-system-variables/#expire_logs_days" target="_blank" title="<?php _e( wp_kses( 'Number of days after which the binary log can be automatically removed. By default 0, or no automatic removal. When using replication, should always be set higher than the maximum lag by any replica.', 'strip' ), 'mdbhc' ); ?>"><small><span class="dashicons dashicons-info"></span></small></a> <?php
+				/* translators: Number of days after which the binary log can be automatically removed. */
 				_e( 'Expire log days', 'mdbhc' );
 			?></td>
 			<td><?php echo $mdbhc_gd['expire_logs_days']; ?></td>
