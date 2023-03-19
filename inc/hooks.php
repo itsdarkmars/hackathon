@@ -11,8 +11,12 @@ global $wpdb;
 class MDB_DB extends wpdb {
 	public $total_query_time = 0.0;
 
-	public function loadFromParentObj( $parentObj )
+	private $parentObj;
+
+	public function loadFromParentObj($parentObj)
 	{
+		$this->parentObj = $parentObj;
+
 		$objValues = get_object_vars($parentObj); // return array of object values
 		foreach($objValues AS $key=>$value)
 		{
@@ -24,6 +28,9 @@ class MDB_DB extends wpdb {
 		$result = parent::query( $query );
 		$this->total_query_time += $this->timer_stop();
 		return $result;
+	}
+	public function getOriginal() {
+		return $this->parentObj;
 	}
 }
 
