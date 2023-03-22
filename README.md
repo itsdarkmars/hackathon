@@ -6,5 +6,5 @@ You will receive notifications related to the version of MariaDB that is install
 
 ## Project information
 
-- [GitHub](https://docs.google.com/document/d/1DWA7JMp-wxjQSNwd7IfDEq-Stc76VbK6kAexjQ6Tyvw/edit#heading=h.s53opt301s6m)
+- [GitHub](https://github.com/itsdarkmars/hackathon/)
 - [Notes](https://docs.google.com/document/d/1DWA7JMp-wxjQSNwd7IfDEq-Stc76VbK6kAexjQ6Tyvw/)
